@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <title>Your Table</title>
+    </head>
+
+
+    <body>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2  sidebar d-none d-lg-flex justify-content-center   ">
+                    <div class="position-fixed ist-part1">
+                        <div class="sidebar-logo mt-5 ">
+
+                            <img src="./images/MobFix-removebg-preview.png" alt="Logo" style="width: 10rem;">
+                        </div>
+                        <div class="sidebar-menu mt-3 row justify-content-center">
+                            <!-- Sidebar menu items go here -->
+                            <ul class="ul-dash ">
+                                <li>
+                                    <a href="./index.html">
+                                        <div class="d-flex gap-4 align-items-center class1 ">
+                                            <img class="" src="./images/dashboard 1.png">
+                                            <h1 class="dash1">Dashboard</h1>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- li2 -->
+
+                                <li><a href="./sales.html">
+                                        <div class="d-flex gap-4 align-items-center class1 ">
+                                            <img class="" src="./images/group 1 (1).png">
+                                            <h1 class="dash1">Sales</h1>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- li-3 -->
+
+                                <li><a href="./Repairs.html">
+                                        <div class="d-flex gap-4 align-items-center class1 ">
+                                            <img class="" src="./images/office-building 1.png">
+                                            <h1 class="dash1">Repairs</h1>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- li-3 -->
+
+                                <li><a href="./chat.html">
+                                        <div class="d-flex gap-4 align-items-center class1 ">
+                                            <img class="" src="./images/customer-service 1.png">
+                                            <h1 class="dash1">Messages</h1>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <div class="shop-dropdown dropdown class1 ">
+                                    <button class="btn dropdown-toggle d-flex gap-4 align-items-center p-0"
+                                        type="button" id="shopDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                        <img class="" src="./images/office-building 1.png">
+                                        <h1 class="dash1">Shops</h1>
+
+                                    </button>
+                                    <ul class="dropdown-menu shop-effect" aria-labelledby="shopDropdown">
+                                        <li><a href="./Shop List.html" class="dropdown-item"> Shops List</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="./customers.html">Customers</a></li>
+
+                                    </ul>
+                                </div>
+
+
+                                <li><a href="#">
+
+
+                                        <div class="d-flex align-items-center gap-4  class1 class2">
+                                            <img class="" src="./images/settings 1.png">
+                                            <h1 class="dash1">Settings</h1>
+                                        </div>
+
+                                    </a></li>
+
+
+                                <!-- Add more menu items here -->
+                            </ul>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                <div class="col-lg-2 sidebar d-flex justify-content-center d-lg-none ">
+                    <div class="offcanvas off2 offcanvas-start sidebar" id="demo">
+                        <div class="offcanvas-header">
+                            <div class="sidebar-logo mt-3  d-flex align-items-center gap-3">
+
+                                <img src="./images/MobFix-removebg-preview.png" alt="Logo" style="width: 10rem;">
+                                <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+                            </div>
+
+                        </div>
+                        <div class="offcanvas-body d-flex">
+                            <div class="sidebar-menu mt-5 row justify-content-center ">
+                                <!-- Sidebar menu items go here -->
+                                <ul class="ul-dash">
+                                    <li>
+                                        <a href="./index.html">
+                                            <div class="d-flex gap-4 align-items-center class1 ">
+                                                <img class="" src="./images/dashboard 1.png">
+                                                <h1 class="dash1">Dashboard</h1>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- li2 -->
+
+                                    <li><a href="./sales.html">
+                                            <div class="d-flex gap-4 align-items-center class1 ">
+                                                <img class="" src="./images/group 1 (1).png">
+                                                <h1 class="dash1">Sales</h1>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- li-3 -->
+
+                                    <li><a href="./Repairs.html">
+                                            <div class="d-flex gap-4 align-items-center  class1">
+                                                <img class="" src="./images/office-building 1.png">
+                                                <h1 class="dash1">Repairs</h1>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- li-3 -->
+
+                                    <li><a href="./chat.html">
+                                            <div class="d-flex gap-4 align-items-center class1 ">
+                                                <img class="" src="./images/customer-service 1.png">
+                                                <h1 class="dash1">Messages</h1>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <div class="shop-dropdown dropdown class1">
+                                        <button class="btn dropdown-toggle d-flex gap-4 align-items-center p-0 "
+                                            type="button" id="shopDropdown" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+
+                                            <img class="" src="./images/office-building 1.png">
+                                            <h1 class="dash1">Shops</h1>
+
+                                        </button>
+                                        <ul class="dropdown-menu shop-effect" aria-labelledby="shopDropdown">
+                                            <li><a class="dropdown-item" href="./Shop List.html"> Shops
+                                                    List</a></li>
+                                            <li><a class="dropdown-item" href="./customers.html">Customers</a></li>
+
+
+                                        </ul>
+                                    </div>
+
+
+                                    <li><a href="#">
+
+                                            <div class="d-flex align-items-center gap-4 creative-div ">
+                                                <img class="" src="./images/settings 1.png">
+                                                <h1 class="dash1">Settings</h1>
+                                            </div>
+                                        </a></li>
+
+                                    <!-- Add more menu items here -->
+                                </ul>
+                                <div class="d-flex gap-4 align-items-center social justify-content-center">
+                                    <a href=""><img src="./images/conversation 1.png" alt="">
+                                    </a>
+                                    <div class="dropdown ">
+                                        <a class="btn  " href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <img src="./images/notification (1) 1.png" alt="">
+                                        </a>
+
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Notification-1</a></li>
+                                            <li><a class="dropdown-item" href="#">Notification-2</a></li>
+                                            <li><a class="dropdown-item" href="#">Notification-3</a></li>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href=""><img src="./images/exit 1.png" alt=""></a>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <!--  -->
+                <div class=" col-lg-10 px-0 py-0">
+                    <div class=" custom-search  py-3 px-sm-5">
+
+                        <div class="d-flex justify-content-between align-items-baseline search2">
+                            <button class="btn  d-lg-none d-block " type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#demo">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <div class="search-bar">
+
+                                <input type="text" class=" search-input inpusearch" placeholder="search">
+                                <a href=""><img class=" search-icon" src="./images/Search.png" alt=""></a>
+
+                            </div>
+                            <div class="d-lg-flex d-none gap-3 align-items-center social">
+                                <a href=""><img src="./images/conversation 1.png" alt="">
+                                </a>
+                                <div class="dropdown ">
+                                    <a class="btn  " href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img src="./images/notification (1) 1.png" alt="">
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Notification-1</a></li>
+                                        <li><a class="dropdown-item" href="#">Notification-2</a></li>
+                                        <li><a class="dropdown-item" href="#">Notification-3</a></li>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href=""><img src="./images/exit 1.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-content">
+                        <h1 class="m-0 dash-1">Shops List</h1>
+                        <div class=" d-flex gap-3 text-end mb-3 justify-content-end align-items-center">
+
+                            <button class="button-shop">
+                                <label for="button">Total Shops</label>
+                            </button>
+
+                            <a href="./Addshop.html"><button class="border-0">
+                                    <img src="./images/plusbutton.png" alt="">
+                                </button></a>
+
+                        </div>
+                        <div class="row gap-3  gap-sm-0 ">
+                            <div class="col-12">
+
+                                <div class="table-responsive">
+                                    <table id="table6" class="table ">
+                                        <thead class="table-head">
+                                            <tr>
+                                                <th class="text-head">ID</th>
+                                                <th class="text-head">Code</th>
+                                                <th class="text-head">Address</th>
+                                                <th class="text-head">Shop name</th>
+                                                <th class="text-head">City</th>
+                                                <th class="text-head">Joining Date</th>
+                                                <th class="text-head"></th><!-- Empty header for delete buttons -->
+
+                                            </tr>
+                                        </thead>
+                                        <tbody id="table5">
+                                            <tr>
+                                                <td>01</td>
+                                                <td>James</td>
+                                                <td>205 Hope Rd Helena, Montana</td>
+                                                <td>FixIt Repair</td>
+                                                <td>Islamabad</td>
+                                                <td>6 June, 2023</td>
+                                                <td><button class="border-0"><img src="./images/delete-icon.png"
+                                                            alt=""></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>02</td>
+                                                <td>William</td>
+                                                <td>205 Hope Rd Helena, Montana</td>
+                                                <td>FixIt Repair</td>
+                                                <td>Islamabad</td>
+                                                <td>6 June, 2023</td>
+                                                <td><button class="border-0"><img src="./images/delete-icon.png"
+                                                            alt=""></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>03</td>
+                                                <td>Oliver</td>
+                                                <td>205 Hope Rd Helena, Montana</td>
+                                                <td>FixIt Repair</td>
+                                                <td>Islamabad</td>
+                                                <td>6 June, 2023</td>
+                                                <td><button class="border-0"><img src="./images/delete-icon.png"
+                                                            alt=""></button></td>
+                                            </tr>
+
+
+                                            </tr>
+                                            <td>04</td>
+                                            <td>James</td>
+                                            <td>205 Hope Rd Helena, Montana</td>
+                                            <td>FixIt Repair</td>
+                                            <td>Islamabad</td>
+                                            <td>6 June, 2023</td>
+                                            <td><button class="border-0"><img src="./images/delete-icon.png"
+                                                        alt=""></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>05</td>
+                                                <td>William</td>
+                                                <td>205 Hope Rd Helena, Montana</td>
+                                                <td>FixIt Repair</td>
+                                                <td>Islamabad</td>
+                                                <td>6 June, 2023</td>
+                                                <td><button class="border-0"><img src="./images/delete-icon.png"
+                                                            alt=""></button></td>
+                                            </tr>
+                                            <td>06</td>
+                                            <td>James</td>
+                                            <td>205 Hope Rd Helena, Montana</td>
+                                            <td>FixIt Repair</td>
+                                            <td>Islamabad</td>
+                                            <td>6 June, 2023</td>
+                                            <td><button class="border-0"><img src="./images/delete-icon.png"
+                                                        alt=""></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>07</td>
+                                                <td>Oliver</td>
+                                                <td>205 Hope Rd Helena, Montana</td>
+                                                <td>FixIt Repair</td>
+                                                <td>Islamabad</td>
+                                                <td>6 June, 2023</td>
+                                                <td><button class="border-0"><img src="./images/delete-icon.png"
+                                                            alt=""></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>08</td>
+                                                <td>James</td>
+                                                <td>205 Hope Rd Helena, Montana</td>
+                                                <td>FixIt Repair</td>
+                                                <td>Islamabad</td>
+                                                <td>6 June, 2023</td>
+                                                <td><button class="border-0"><img src="./images/delete-icon.png"
+                                                            alt=""></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>09</td>
+                                                <td>Oliver</td>
+                                                <td>205 Hope Rd Helena, Montana</td>
+                                                <td>FixIt Repair</td>
+                                                <td>Islamabad</td>
+                                                <td>6 June, 2023</td>
+                                                <td><button class="border-0"><img src="./images/delete-icon.png"
+                                                            alt=""></button></td>
+                                            </tr>
+
+
+                                        </tbody>
+
+
+
+                                    </table>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+                    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+                    <script>
+                        $(document).ready(function () {
+                            var table = $('#table6').DataTable({
+                                paging: $('#table6 tbody tr').length > 10, // Show pagination if more than 10 rows
+                                searching: false, // Disable search functionality
+                                select: {
+                                    style: 'os' // Enable row selection
+                                },
+                                columnDefs: [
+                                    {
+                                        targets: -1, // Target the last column (delete buttons)
+                                        orderable: false, // Make it non-orderable
+                                        searchable: false, // Make it non-searchable
+                                    },
+                                ],
+                            });
+                        });
+                    </script>
+    </body>
+
+</html>

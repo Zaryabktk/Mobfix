@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- offcanvas -->
+                <div class="col-lg-2  sidebar d-none d-lg-flex justify-content-center   ">
+                    <div class="position-fixed ist-part1">
+                        <div class="sidebar-logo mt-5 ">
+
+                            <img src="./images/MobFix-removebg-preview.png" alt="Logo" style="width: 10rem;">
+                        </div>
+                        <div class="sidebar-menu mt-3 row justify-content-center">
+                            <!-- Sidebar menu items go here -->
+                            <ul class="ul-dash ">
+                                <li>
+                                    <a href="./index.html">
+                                        <div class="d-flex gap-4 align-items-center class1 ">
+                                            <img class="" src="./images/dashboard 1.png">
+                                            <h1 class="dash1">Dashboard</h1>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- li2 -->
+
+                                <li><a href="./sales.html">
+                                        <div class="d-flex gap-4 align-items-center class1 ">
+                                            <img class="" src="./images/group 1 (1).png">
+                                            <h1 class="dash1">Sales</h1>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- li-3 -->
+
+                                <li><a href="./Repairs.html">
+                                        <div class="d-flex gap-4 align-items-center class1 ">
+                                            <img class="" src="./images/office-building 1.png">
+                                            <h1 class="dash1">Repairs</h1>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- li-3 -->
+
+                                <li><a href="./chat.html">
+                                        <div class="d-flex gap-4 align-items-center class1 ">
+                                            <img class="" src="./images/customer-service 1.png">
+                                            <h1 class="dash1">Messages</h1>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <div class="shop-dropdown dropdown class1 ">
+                                    <button class="btn dropdown-toggle d-flex gap-4 align-items-center p-0"
+                                        type="button" id="shopDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                        <img class="" src="./images/office-building 1.png">
+                                        <h1 class="dash1">Shops</h1>
+
+                                    </button>
+                                    <ul class="dropdown-menu shop-effect" aria-labelledby="shopDropdown">
+                                        <li><a href="./Shop List.html" class="dropdown-item"> Shops List</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="./customers.html">Customers</a></li>
+
+                                    </ul>
+                                </div>
+
+
+
+                                <li><a href="#">
+
+
+                                        <div class="d-flex align-items-center gap-4  class1 class2">
+                                            <img class="" src="./images/settings 1.png">
+                                            <h1 class="dash1">Settings</h1>
+                                        </div>
+
+                                    </a></li>
+
+
+                                <!-- Add more menu items here -->
+                            </ul>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                <div class="col-lg-2 sidebar d-flex justify-content-center d-lg-none ">
+                    <div class="offcanvas off2 offcanvas-start sidebar" id="demo">
+                        <div class="offcanvas-header">
+                            <div class="sidebar-logo mt-3  d-flex align-items-center gap-3">
+
+                                <img src="./images/MobFix-removebg-preview.png" alt="Logo" style="width: 10rem;">
+                                <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+                            </div>
+
+                        </div>
+                        <div class="offcanvas-body d-flex">
+                            <div class="sidebar-menu mt-5 row justify-content-center ">
+                                <!-- Sidebar menu items go here -->
+                                <ul class="ul-dash">
+                                    <li>
+                                        <a href="./index.html">
+                                            <div class="d-flex gap-4 align-items-center class1 ">
+                                                <img class="" src="./images/dashboard 1.png">
+                                                <h1 class="dash1">Dashboard</h1>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- li2 -->
+
+                                    <li><a href="./sales.html">
+                                            <div class="d-flex gap-4 align-items-center class1 ">
+                                                <img class="" src="./images/group 1 (1).png">
+                                                <h1 class="dash1">Sales</h1>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- li-3 -->
+
+                                    <li><a href="./Repairs.html">
+                                            <div class="d-flex gap-4 align-items-center  class1">
+                                                <img class="" src="./images/office-building 1.png">
+                                                <h1 class="dash1">Repairs</h1>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <!-- li-3 -->
+
+                                    <li><a href="./chat.html">
+                                            <div class="d-flex gap-4 align-items-center class1 ">
+                                                <img class="" src="./images/customer-service 1.png">
+                                                <h1 class="dash1">Messages</h1>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <div class="shop-dropdown dropdown class1">
+                                        <button class="btn dropdown-toggle d-flex gap-4 align-items-center p-0 "
+                                            type="button" id="shopDropdown" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+
+                                            <img class="" src="./images/office-building 1.png">
+                                            <h1 class="dash1">Shops</h1>
+
+                                        </button>
+                                        <ul class="dropdown-menu shop-effect" aria-labelledby="shopDropdown">
+                                            <li><a class="dropdown-item" href="./Shop List.html"> Shops
+                                                    List</a></li>
+                                            <li><a class="dropdown-item" href="./customers.html">Customers</a></li>
+
+
+                                        </ul>
+                                    </div>
+
+
+                                    <li><a href="#">
+
+                                            <div class="d-flex align-items-center gap-4 creative-div ">
+                                                <img class="" src="./images/settings 1.png">
+                                                <h1 class="dash1">Settings</h1>
+                                            </div>
+                                        </a></li>
+
+                                    <!-- Add more menu items here -->
+                                </ul>
+                                <div class="d-flex gap-4 align-items-center social justify-content-center">
+                                    <a href=""><img src="./images/conversation 1.png" alt="">
+                                    </a>
+                                    <div class="dropdown ">
+                                        <a class="btn  " href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <img src="./images/notification (1) 1.png" alt="">
+                                        </a>
+
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Notification-1</a></li>
+                                            <li><a class="dropdown-item" href="#">Notification-2</a></li>
+                                            <li><a class="dropdown-item" href="#">Notification-3</a></li>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href=""><img src="./images/exit 1.png" alt=""></a>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <!--  -->
+                <div class=" col-lg-10 px-0 py-0">
+                    <div class=" custom-search  py-3 px-sm-5">
+
+                        <div class="d-flex justify-content-between align-items-baseline search2">
+                            <button class="btn  d-lg-none d-block " type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#demo">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                            <div class="search-bar">
+
+                                <input type="text" class=" search-input inpusearch" placeholder="search">
+                                <a href=""><img class=" search-icon" src="./images/Search.png" alt=""></a>
+
+                            </div>
+                            <div class="d-lg-flex d-none gap-3 align-items-center social">
+                                <a href=""><img src="./images/conversation 1.png" alt="">
+                                </a>
+                                <div class="dropdown ">
+                                    <a class="btn  " href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img src="./images/notification (1) 1.png" alt="">
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Notification-1</a></li>
+                                        <li><a class="dropdown-item" href="#">Notification-2</a></li>
+                                        <li><a class="dropdown-item" href="#">Notification-3</a></li>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href=""><img src="./images/exit 1.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-content">
+                        <h1 class=" mb-4 dash-1">Dashboard</h1>
+                        <div class="row gap-3  gap-sm-0 ">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="card mb-4 gcard">
+                                    <div class="card-body gt">
+                                        <div class="d-flex justify-content-between">
+                                            <h1 class="card-title1">10</h1>
+                                            <img src="./images/enterprise 1.png" alt="">
+                                        </div>
+                                        <h1 class="card-text1">Shops</h1>
+
+
+                                    </div>
+                                    <a href="#" class="btn-more-info1 w-100 d-flex gap-1 justify-content-center">More
+                                        Info
+                                        <img src="./images/Frame 263.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="card mb-4 vcard">
+                                    <div class="card-body gt">
+                                        <div class="d-flex justify-content-between">
+                                            <h1 class="card-title1">200</h1>
+                                            <img src="./images/Total Sales.png" alt="">
+                                        </div>
+                                        <h1 class="card-text1">Sales</h1>
+
+                                    </div>
+                                    <a href="#" class="btn-more-info1 w-100 d-flex gap-1 justify-content-center">More
+                                        Info
+                                        <img src="./images/Frame 263.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="card mb-4 scard">
+                                    <div class="card-body gt">
+                                        <div class="d-flex justify-content-between">
+                                            <h1 class="card-title1">100</h1>
+                                            <img src="./images/Car Service.png" alt="" style="width: 50px;">
+                                        </div>
+                                        <h1 class="card-text1">Repair Phones</h1>
+
+                                    </div>
+                                    <a href="#" class="btn-more-info1 w-100 d-flex gap-1 justify-content-center">More
+                                        Info
+                                        <img src="./images/Frame 263.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="card mb-4 dcard">
+                                    <div class="card-body gt">
+                                        <div class="d-flex justify-content-between">
+                                            <h1 class="card-title1">250</h1>
+                                            <img src="./images/people 1.png" alt="">
+                                        </div>
+                                        <h1 class="card-text1">Customers</h1>
+
+                                    </div>
+                                    <a href="#" class="btn-more-info1 w-100 d-flex gap-1 justify-content-center">More
+                                        Info
+                                        <img src="./images/Frame 263.png" alt=""></a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <!-- Cards Section -->
+                        <div class="row ">
+
+                            <!-- Add more cards here -->
+
+                            <!-- Charts Section -->
+                            <div class="col-lg-8  col-12">
+
+
+                                <div class="card h-100 ">
+
+                                    <div class="card-body cradreport ">
+
+                                        <div class="d-flex justify-content-between">
+                                            <h1 class="card-title-repair">Repair Reports</h1>
+                                            <div class="dropdown  ">
+                                                <button class="btn  dropdownBor dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class=""><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                            height="20" viewBox="0 0 15 15" fill="none">
+                                                            <g clip-path="url(#clip0_216_140)">
+                                                                <path
+                                                                    d="M11.575 2.63892H3.06956C2.3985 2.63892 1.85449 3.18292 1.85449 3.85398V12.3594C1.85449 13.0305 2.3985 13.5745 3.06956 13.5745H11.575C12.2461 13.5745 12.7901 13.0305 12.7901 12.3594V3.85398C12.7901 3.18292 12.2461 2.63892 11.575 2.63892Z"
+                                                                    stroke="black" stroke-width="1.21507"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M9.75293 1.42389V3.85402" stroke="black"
+                                                                    stroke-width="1.21507" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                                <path d="M4.8916 1.42389V3.85402" stroke="black"
+                                                                    stroke-width="1.21507" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                                <path d="M1.85449 6.28412H12.7901" stroke="black"
+                                                                    stroke-width="1.21507" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_216_140">
+                                                                    <rect width="14.5808" height="14.5808" fill="white"
+                                                                        transform="translate(0.0322266 0.208801)" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg></span>
+                                                    2022
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <canvas id="dashedChart" class="">
+
+                                        </canvas>
+                                        <img src="./images/grl.png" alt="">
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- Line Chart for Repair Reports -->
+
+
+
+                            <div class="col-lg-4  col-12 mt-lg-0 mt-md-0 mt-4">
+                                <!-- Bar Chart for Customer Fulfillment -->
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h1 class="card-title-repair">Customer Fulfillment</h1>
+                                        <canvas id="stackedAreaChart" class=""></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row mt-4">
+                            <div class="col-md-6">
+
+                                <div class="table-responsive">
+                                    <table id="myTable" class="table ">
+                                        <h1 class="shops pt-4 mx-3">Shops</h1>
+                                        <hr style="margin: 0px;">
+                                        <thead>
+
+                                            <tr>
+                                                <th class="text-head">
+                                                    ID
+                                                </th>
+                                                <th class="text-head">
+                                                    Company Name
+                                                </th>
+                                                <th class="text-head">
+
+                                                    Release Date
+
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>Giant</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>02</td>
+                                                <td>Cannondale</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>03</td>
+                                                <td>Bianchi</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>04</td>
+                                                <td>Trek</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>05</td>
+                                                <td>Bianchi</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <!-- Add more rows as needed -->
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 mt-lg-0   mt-md-0 mt-4">
+                                <div class="table-responsive">
+
+                                    <table id="myTable2" class="table">
+                                        <h1 class="sales pt-4 mx-3">Sales</h1>
+                                        <hr style="margin: 0px;">
+                                        <thead>
+
+                                            <tr>
+                                                <th class="text-head">
+                                                    ID
+                                                </th>
+                                                <th class="text-head">
+                                                    Bicycle
+                                                </th>
+                                                <th class="text-head">
+                                                    Delievery Date
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>Silver Stallion</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>02</td>
+                                                <td>T Rider</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>03</td>
+                                                <td>Zeus</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>04</td>
+                                                <td>Pegasus</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>05</td>
+                                                <td>Silver Stallion</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <!-- Add more rows as needed -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mt-4 ">
+
+                                <div class="table-responsive">
+                                    <table class="table " id="myTable3">
+                                        <h1 class="repair pt-4 mx-3">Repair Phones</h1>
+                                        <hr style="margin: 0px;">
+                                        <thead>
+
+                                            <tr>
+                                                <th class="text-head">
+
+                                                    ID
+                                                </th>
+                                                <th class="text-head">
+
+                                                    Day of under maint
+
+                                                </th>
+                                                <th class="text-head">
+
+                                                    End Date
+
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>4 Days</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>02</td>
+                                                <td>2 Days</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>03</td>
+                                                <td>1 Days</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>04</td>
+                                                <td>3 Days</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>05</td>
+                                                <td>2 Days</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <!-- Add more rows as needed -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4 ">
+                                <div class="table-responsive">
+
+                                    <table class="table " id="myTable4">
+
+                                        <thead>
+
+
+                                            <tr>
+                                                <h1 class="customer pt-4 mx-3">Customers</h1>
+                                                <hr style="margin: 0px;">
+                                                <th class="text-head">
+                                                    ID
+                                                </th>
+                                                <th class="text-head">
+                                                    User name
+                                                </th>
+                                                <th class="text-head">
+                                                    Reg Date
+                                                </th>
+                                                <th class="text-head">
+                                                    End Date
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>James</td>
+                                                <td>02/07/2023</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>02</td>
+                                                <td>Noah</td>
+                                                <td>02/07/2023</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>03</td>
+                                                <td>William</td>
+                                                <td>02/07/2023</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>04</td>
+                                                <td>Oliver</td>
+                                                <td>02/07/2023</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <tr>
+                                                <td>05</td>
+                                                <td>James</td>
+                                                <td>02/07/2023</td>
+                                                <td>02/08/2023</td>
+                                            </tr>
+                                            <!-- Add more rows as needed -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            var ctx = document.getElementById('dashedChart').getContext('2d');
+
+            var data = {
+                labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+                datasets: [
+                    {
+
+                        borderColor: 'rgba(0, 0, 0, 0.1)', // Black with opacity
+                        borderWidth: 3,
+
+                        borderCapStyle: 'round',
+                        lineTension: 0.3,
+                        borderDash: [5, 5], // Dashed line style
+                        pointRadius: 0,      // Set point radius to 0 (hide data points)
+                        pointHoverRadius: 0, // Set point hover radius to 0 (hide data points on hover)
+                        data: [30000, 18000, 20000, 27000, 20000, 12000, 23000, 34000, 30000, 45000, 32000, 40000],
+
+
+                    },
+                    {
+
+                        borderColor: 'blue', // Black with higher opacity
+                        borderWidth: 3,
+                        borderCapStyle: 'round',
+                        lineTension: 0.3,
+                        // borderDash: [5, 5], // Dashed line style
+                        pointRadius: 0,      // Set point radius to 0 (hide data points)
+                        pointHoverRadius: 0, // Set point hover radius to 0 (hide data points on hover)
+                        data: [20000, 25000, 20000, 11000, 11000, 22000, 42000, 28000, 40000, 48000, 30000, 32000],
+                    },
+                ],
+            };
+
+            var options = {
+                scales: {
+                    x: {
+                        title: {
+                            display: false,
+
+                        },
+                        grid: {
+                            display: false, // Hide x-axis grid lines
+                        },
+                        ticks: {
+                            fontSize: 12,
+                            color: '#8D8D8D',  // Set the font size for x-axis labels (1 to 12)
+                        },
+                    },
+                    y: {
+                        title: {
+                            display: false, // Hide y-axis title
+                        },
+                        ticks: {
+                            callback: function (value, index, values) {
+                                return "$" + value / 1000 + 'k'; // Format y-axis labels as '10k', '20k', etc.
+                            },
+                            stepSize: 10000, // Step size between ticks
+                            fontSize: 12,
+                            color: '#8D8D8D',    // Set the font size for y-axis labels ("10k")
+                        },
+                        grid: {
+                            display: true, // Hide y-axis grid lines
+                        },
+                    },
+                },
+                plugins: {
+                    legend: {
+                        display: false, // Hide the legend
+                    },
+                    title: {
+                        display: true,
+                        text: 'Islamabad Institute Of Arts And Applied Sciences',
+                        position: 'top', // Position title at the top
+                        align: 'end',    // Align title to the right
+                        color: '#000',  // Set the title color to green
+                        font: {
+                            size: 12,      // Set the font size of the title to 20px
+                        }  // Set the font size to 200
+                    },
+                },
+            };
+
+            var dashedChart = new Chart(ctx, {
+                type: 'line',
+                data: data,
+                options: options,
+            });
+            const cta = document.getElementById('stackedAreaChart').getContext('2d');
+
+            const dat = {
+                labels: ['', '', '', '', '', '', ''],
+                datasets: [
+                    {
+                        label: 'This Month', // Swap the order of the labels
+                        backgroundColor: '#A9DFD8', // Blue
+                        borderColor: '#40BBAB',
+                        borderWidth: 1,
+                        data: [90, 40, 50, 30, 40, 30, 90],
+                        fill: 'start', // Fill the area under the line
+                    },
+                    {
+                        label: 'Last Month', // Swap the order of the labels
+                        backgroundColor: '#F06EE1', // Red
+                        borderColor: '#F06EE1',
+                        borderWidth: 1,
+                        data: [90, 40, 50, 30, 40, 30, 90],
+                        fill: 'start', // Fill the area under the line
+                    },
+                ],
+            };
+
+            const option = {
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true,
+                        title: {
+                            display: false,
+                        },
+                        grid: {
+                            display: false, // Hide x-axis grid lines
+                        },
+                        ticks: {
+
+                            display: false,
+                            // Set the font size for x-axis labels (1 to 12)
+                        },
+                    },
+                },
+                plugins: {
+                    legend: {
+                        // Display the legend
+                        position: 'bottom', // Position the legend at the bottom
+
+                    },
+                    title: {
+
+                    },
+
+                },
+            };
+
+            const stackedAreaChart = new Chart(cta, {
+                type: 'line', // Use 'line' type for stacked area chart
+                data: dat,
+                options: option,
+            });
+
+
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+        <!-- code for data table  -->
+        <script>
+
+            $(document).ready(function () {
+                var table = $('#myTable').DataTable({
+                    paging: $('#myTable tbody tr').length > 6, // Show pagination if more than 10 rows
+                    searching: false, // Disable search functionality
+                    select: {
+                        style: 'os' // Enable row selection
+                    },
+
+                });
+            });
+            $(document).ready(function () {
+                var table = $('#myTable2').DataTable({
+                    paging: $('#myTable2 tbody tr').length > 6, // Show pagination if more than 10 rows
+                    searching: false, // Disable search functionality
+                    select: {
+                        style: 'os' // Enable row selection
+                    },
+
+                });
+            });
+            $(document).ready(function () {
+                var table = $('#myTable3').DataTable({
+                    paging: $('#myTable3 tbody tr').length > 6, // Show pagination if more than 10 rows
+                    searching: false, // Disable search functionality
+                    select: {
+                        style: 'os' // Enable row selection
+                    },
+
+                });
+            });
+
+            $(document).ready(function () {
+                var table = $('#myTable4').DataTable({
+                    paging: $('#myTable4 tbody tr').length > 6, // Show pagination if more than 10 rows
+                    searching: false, // Disable search functionality
+                    select: {
+                        style: 'os' // Enable row selection
+                    },
+
+                });
+            });
+
+
+        </script>
+
+        <!-- code for data table  -->
+
+
+
+
+    </body>
+
+</html>
