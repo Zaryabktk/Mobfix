@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="dash.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
@@ -29,7 +29,7 @@
                             <!-- Sidebar menu items go here -->
                             <ul class="ul-dash ">
                                 <li>
-                                    <a href="./index.html">
+                                    <a href="./Dashboard.html">
                                         <div class="d-flex gap-4 align-items-center class1 ">
                                             <img class="" src="./images/dashboard 1.png">
                                             <h1 class="dash1">Dashboard</h1>
@@ -119,7 +119,7 @@
                                 <!-- Sidebar menu items go here -->
                                 <ul class="ul-dash">
                                     <li>
-                                        <a href="./index.html">
+                                        <a href="./Dashboard.html">
                                             <div class="d-flex gap-4 align-items-center class1 ">
                                                 <img class="" src="./images/dashboard 1.png">
                                                 <h1 class="dash1">Dashboard</h1>
@@ -191,12 +191,29 @@
                                             <img src="./images/notification (1) 1.png" alt="">
                                         </a>
 
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Notification-1</a></li>
-                                            <li><a class="dropdown-item" href="#">Notification-2</a></li>
-                                            <li><a class="dropdown-item" href="#">Notification-3</a></li>
-                                            </li>
-                                        </ul>
+                                        <div class="dropdown-menu mobile-notify">
+                                            <div class="notification-list">
+                                                <a href="">
+                                                    <div class="notification-item d-flex gap-2">
+                                                        <img src="./images/user1.png" alt="Rohit" style="height: 40px;">
+                                                        <div>
+                                                            <h1 class="user-1">Rohit</h1>
+                                                            <p class="user-noti">You have 3 new messages.</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="">
+                                                    <div class="notification-item d-flex gap-2">
+                                                        <img src="./images/user1.png" alt="Rohit" style="height: 40px;">
+                                                        <div>
+                                                            <h1 class="user-1">Rohit</h1>
+                                                            <p class="user-noti">You have 3 new messages.</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <!-- Add more notification items as needed -->
+                                            </div>
+                                        </div>
                                     </div>
                                     <a href=""><img src="./images/exit 1.png" alt=""></a>
                                 </div>
@@ -215,7 +232,7 @@
                 <div class=" col-lg-10 px-0 py-0">
                     <div class=" custom-search  py-3 px-sm-5">
 
-                        <div class="d-flex justify-content-between align-items-baseline search2">
+                        <div class="d-flex justify-content-between align-items-center search2">
                             <button class="btn  d-lg-none d-block " type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#demo">
                                 <i class="fa-solid fa-bars"></i>
@@ -234,13 +251,29 @@
                                         aria-expanded="false">
                                         <img src="./images/notification (1) 1.png" alt="">
                                     </a>
-
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Notification-1</a></li>
-                                        <li><a class="dropdown-item" href="#">Notification-2</a></li>
-                                        <li><a class="dropdown-item" href="#">Notification-3</a></li>
-                                        </li>
-                                    </ul>
+                                    <div class="dropdown-menu notify-menu ">
+                                        <div class="notification-list">
+                                            <a href="">
+                                                <div class="notification-item d-flex gap-2">
+                                                    <img src="./images/user1.png" alt="Rohit" style="height: 40px;">
+                                                    <div>
+                                                        <h1 class="user-1">Rohit</h1>
+                                                        <p class="user-noti">You have 3 new messages.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="notification-item d-flex gap-2">
+                                                    <img src="./images/user1.png" alt="Rohit" style="height: 40px;">
+                                                    <div>
+                                                        <h1 class="user-1">Rohit</h1>
+                                                        <p class="user-noti">You have 3 new messages.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!-- Add more notification items as needed -->
+                                        </div>
+                                    </div>
                                 </div>
                                 <a href=""><img src="./images/exit 1.png" alt=""></a>
                             </div>
@@ -384,28 +417,31 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-                    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-                    <script>
-                        $(document).ready(function () {
-                            var table = $('#table6').DataTable({
-                                paging: $('#table6 tbody tr').length > 10, // Show pagination if more than 10 rows
-                                searching: false, // Disable search functionality
-                                select: {
-                                    style: 'os' // Enable row selection
-                                },
-                                columnDefs: [
-                                    {
-                                        targets: -1, // Target the last column (delete buttons)
-                                        orderable: false, // Make it non-orderable
-                                        searchable: false, // Make it non-searchable
-                                    },
-                                ],
-                            });
-                        });
-                    </script>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                var table = $('#table6').DataTable({
+                    paging: $('#table6 tbody tr').length > 10, // Show pagination if more than 10 rows
+                    searching: false, // Disable search functionality
+                    select: {
+                        style: 'os' // Enable row selection
+                    },
+                    columnDefs: [
+                        {
+                            targets: -1, // Target the last column (delete buttons)
+                            orderable: false, // Make it non-orderable
+                            searchable: false, // Make it non-searchable
+                        },
+                    ],
+                });
+            });
+        </script>
     </body>
 
 </html>
